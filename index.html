@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>PR0M31H3U5</title>
+		<meta name="description"                           content="Pentester and Software engineer from Mother Russia.">
+		<meta name="author"                                content="pr0m31h3u5.xyz">
+		<meta name="viewport"                              content="width=device-width, initial-scale=1">
+		<meta name="mobile-web-app-capable"                content="yes">
+		<meta name="apple-mobile-web-app-capable"          content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="theme-color"                           content="black">
+		<meta name="msapplication-navbutton-color"         content="black">
+		<meta name="msapplication-config"                  content="none">
+		<meta name="msapplication-TileColor"               content="black">
+		<link rel="apple-touch-icon"      sizes="192x192"  href="ico/icon_192.png">
+		<link rel="icon" type="image/png" sizes="512x512"  href="ico/icon_512.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="ico/icon_192.png">
+		<link rel="icon" type="image/png" sizes="32x32"    href="ico/icon_32.png">
+		<link rel="stylesheet" type="text/css"             href="css/simple_console.css"/>
+		<link rel="stylesheet" type="text/css"             href="css/main%EF%B9%9620221107125354.css"/>
+		<meta name="twitter:card"        content="summary">
+		<meta name="twitter:site"        content="@pr0m31h3u5">
+		<meta name="twitter:title"       content="pr0m31h3u5">
+		<meta name="twitter:description" content="Software engineer.">
+		<meta name="twitter:image"       content="https//:pr0m31h3u5.xyz/ico/icon_512.png">
+	</head>
+	<body>
+		<!--
+			Press 'f' to toggle fullscreen
+		-->
+		<main class="invisible">
+			
+				<div>
+					pr0m31h3u5
+				</div>
+				<div>
+					Pentester and Software engineer from Mother Russia
+				</div>
+				<div class="span">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, porro.
+				</div>
+				<div>
+					Email for inquiries or just to say:<br>
+					<a href="mailto:pr0m31h3u5@yahoo.com" class="tiroir">hi</a>
+				</div>
+
+				<div>
+					Social media:<br>
+					<a target="_blank" href="https://www.linkedin.com/in/pr0m31h3u5/">LinkedIn</a><br>
+					<a target="_blank" href="https://t.me/PR0M31H3U5">Telegram</a><br>
+					<a target="_blank" href="http://github.com/pr0m31h3u5">GitHub</a><br>
+				</div>
+
+		</main>
+		<pre aria-hidden="true"></pre>
+		<script src="boot%EF%B9%9620221107125354.js"></script>
+		<script>
+
+			// Parse location
+			const url = new URL(location)
+			const src = url.searchParams
+
+			const mode  = (src.get('mode') || '').toLowerCase()
+
+			const color = (src.get('color') || '').toLowerCase()
+
+			const word  = (url.hash.substr(1) || src.get('word') || '').toLowerCase()
+
+			pr0m31h3u5.boot({word, mode, color})
+
+			const s = shuffle([
+				'Sup',
+				'Privet',
+				'Ciao',
+				'Viva',
+				'Salut',
+				'Hello',
+				'Grüezi',
+				'Cheers',
+				'Ciao',
+				'Olà',
+				'Bonjour',
+				'Namaste',
+				'Guten Tag',
+			])
+
+			let c = 0;
+			const e = document.querySelector('.tiroir')
+			function swap(){
+				c = ++c % s.length
+				e.href = 'mailto:pr0m31h3u5@yahoo.com?subject=' + s[c]
+				e.innerText = s[c]
+			}
+			swap()
+			setInterval(swap, 9000)
+
+			function shuffle(array){
+				for(let i=array.length-1; i>0; i--){
+					const j = Math.floor(Math.random() * i)
+					;[array[i], array[j]] = [array[j], array[i]]
+				}
+				return array
+			}
+
+		</script>
+	</body>
+</html>
