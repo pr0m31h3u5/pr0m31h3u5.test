@@ -1,2 +1,2 @@
 # pr0m31h3u5.xyz
-The main donor for the site was the site of some Swedish engineer. I took it, revised the idea and redesigned it for myself.
+Yes, i know about Jquary and similar finctions of this library. However, the algorithm used in this work serves in isolation under the brut of letters. 
